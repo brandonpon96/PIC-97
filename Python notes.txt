@@ -1,0 +1,63 @@
+Python notes
+
+ints, floats
+int division uses flooring
+use // to force floor division for floats
+others float division is normal
+using combination of floats, ints: result will be a float
+last expression assign to variable '_'
+
+Strings
+escape special characters
+if using ', need to escape other ' in string, escape for " not needed
+other way around for double quotes as well.
+use raw string to interpret as string literal, no escapes
+print r'hello\n'
+multi line:  """..."""
+prevent new line by adding \ at end of line
+concatenate with +, repeate with *
+with string literals, can add like 'py' 'thon'
+to get a character like so: word[1]
+to go reverse, word[-1]
+slicing: (substring)
+word[0:2]  -> 'Py'
+if either is omitted, default to 0 and length of string
+String are immutable
+string length: len(s)
+
+printing strings:
+separate things printed with a ',' and a space automatically added
+new line added after each print statement
+add trailing comma to avoid new line after output
+
+function example:
+>>> def fib(n):    # write Fibonacci series up to n
+...     """Print a Fibonacci series up to n."""
+...     a, b = 0, 1
+...     while a < n:
+...         print a,
+...         a, b = b, a+b
+
+function names can be set like variables
+f = fib  #can now call function using f(n)
+
+method: member function
+function: non-member function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
