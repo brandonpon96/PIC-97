@@ -1,18 +1,6 @@
 #!/usr/bin/python
 
-N = 7
-i = 2
-isPrime = True
+def f(*args):
+    return sum(args)+1
 
-while i < N and isPrime == True:
-	if N % i == 0:
-		isPrime = False
-	i = i + 1
-
-message = ""
-if isPrime:
-	message = "prime"
-else:
-	message = "not prime"
-
-print message
+print f(2,2)

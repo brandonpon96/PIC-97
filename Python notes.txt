@@ -44,7 +44,93 @@ f = fib  #can now call function using f(n)
 method: member function
 function: non-member function
 
+range(x) creates a list from 0 to x - 1
+range(x,y) from x to y - 1
 
+words = ['cat', 'window', 'defenestrate']
+for w in words:
+	if len(w) > 6:
+		words.insert(0, w)
+
+print words
+
+create an empty list: x = []
+
+control flow:
+	if, elif, elif, elif, else
+
+pass statement does nothing.  Used as a filler to make syntax correct
+
+arbitrary argument list
+
+def numargs(*args):
+	print len(args)
+
+numargs(1,2,3,4)
+
+can use list as a stack
+
+>>> stack = [3, 4, 5]
+>>> stack.append(6)
+>>> stack.append(7)
+>>> stack
+[3, 4, 5, 6, 7]
+>>> stack.pop()
+
+list as a queue
+>>> from collections import deque
+>>> queue = deque(["Eric", "John", "Michael"])
+>>> queue.append("Terry")           # Terry arrives
+>>> queue.append("Graham")          # Graham arrives
+>>> queue.popleft()                 # The first to arrive now leaves
+'Eric'
+>>> queue.popleft()                 # The second to arrive now leaves
+
+The method index() returns the lowest index in list that obj appears.
+
+list.extend(L)  appends items of the list L to list
+
+list.insert(i, x)
+Insert an item at a given position. The first argument is the index of the element before which to insert, so a.insert(0, x) inserts at the front of the list, and a.insert(len(a), x) is equivalent to a.append(x).
+
+list.remove(x)
+Remove the first item from the list whose value is x. It is an error if there is no such item.
+
+list.pop([i])
+Remove the item at the given position in the list, and return it. If no index is specified, a.pop() removes and returns the last item in the list. (The square brackets around the i in the method signature denote that the parameter is optional, not that you should type square brackets at that position. You will see this notation frequently in the Python Library Reference.)
+
+list.index(x)
+Return the index in the list of the first item whose value is x. It is an error if there is no such item.
+
+list.count(x)
+Return the number of times x appears in the list.
+
+list.sort(cmp=None, key=None, reverse=False)
+Sort the items of the list in place (the arguments can be used for sort customization, see sorted() for their explanation).
+
+list.reverse()
+Reverse the elements of the list, in place.
+
+del statement
+used to delete items from list
+del a deletes list a Referencing the name a hereafter is an error (at least until another value is assigned to it).
+del a[0] deletes first element
+del a[2:4] deletes elements 2 and 3
+
+Tuple
+similar to list, though immutable, unlike lists, which are mutable
+accesed via unpacking, or indexing
+empty tuple:  empty = ()
+single tuple: single = 'hello',
+sequence unpacking 
+t = 1, 2, 3
+x,y,z = t set x= 1, y = 2, z= 3
+must have correct number of varaibles to match length of tuple
+
+lambda functions
+months_tuple = ('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December')
+num_to_month = lambda x: months_tuple[x]
+print num_to_month(4)
 
 
 
