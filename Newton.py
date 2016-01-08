@@ -24,18 +24,15 @@ def f3p(x):
 
 def newton(x, toler, f, fp):
 
-	y = f(x)
-	yp = fp(x)
-	x1 = x - y / float(yp)		
-	x = x1
-	while math.fabs(f(x1)) >= toler:
+	t = toler + 1
+
+	while t >= toler:
 		y = f(x)
 		yp = fp(x)
 		x1 = x - y / float(yp)
-		if 	math.fabs(f(x1)) < toler:
-			break
 		x = x1
-
+		t = math.fabs(f(x1))
+		
 	return x1
 
 
