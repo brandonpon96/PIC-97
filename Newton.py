@@ -24,9 +24,9 @@ def f3p(x):
 
 def newton(x, toler, f, fp):
 
-	t = toler
+	t = toler + 1
 
-	while t >= toler:
+	while t > toler:
 		y = f(x)
 		yp = fp(x)
 		x = x - y / float(yp)
