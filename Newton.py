@@ -29,11 +29,10 @@ def newton(x, toler, f, fp):
 	while t >= toler:
 		y = f(x)
 		yp = fp(x)
-		x1 = x - y / float(yp)
-		x = x1
-		t = math.fabs(f(x1))
+		x = x - y / float(yp)
+		t = math.fabs(f(x))
 
-	return x1
+	return x
 
 
 error = 0.0001
