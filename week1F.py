@@ -18,23 +18,25 @@ gibber = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo
 words = gibber.split()
 
 #problem 1
-#dic = {x:words.count(x) for x in words}
-#print dic
-#dic = createList(words)
-#print dic
+dic = {x:words.count(x) for x in words}
+print dic
+dic = createList(words)
+print dic
 
 #problem 2
-#unique = len(dic)
-#print unique
+unique = len(dic)
+print unique
 
+#problem 3
 f = open('plaintext.txt', 'r')
 book = f.read();
 words = book.split()
 
-#start = time.time()
-#dic = {x:words.count(x) for x in words}
-#end = time.time()
-#print "dictionary comprehension elapsed time is",(end - start)
+start = time.time()
+dic = {x:words.count(x) for x in words}
+end = time.time()
+print "dictionary comprehension elapsed time is",(end - start)
+
 start = time.time()
 dic = createList(words)
 end = time.time()
