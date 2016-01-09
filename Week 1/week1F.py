@@ -20,8 +20,6 @@ words = gibber.split()
 #problem 1
 dic = {x:words.count(x) for x in words}
 print dic
-dic = createList(words)
-print dic
 
 #problem 2
 unique = len(dic)
