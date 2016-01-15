@@ -1,0 +1,13 @@
+you should use zip when trying to combine multiple lists of data, when it makes sense
+that they are all on the same axis of measurement.  Doing so is especially useful and common in
+mathematical algorithms and analysis, where you may want to apply the same function or
+processes to all sets of data.  
+
+I could not find the time analaysis for the big O of the zip function online, but with my tests,
+I observed that it takes roughly a factor of 2 times longer than a for loop, at least for small lists (less than a million).  This is why when trying to compare to a for loop iterating through two lists simultaneously, using zip will always take longer, since it has the added task of performing the zip function.
+
+However, the zip function is faster at what it is intended to do, which is joining multiple lists together.
+I tested zipping against using a for loop to created a list of tuples, and performance wise it looks like
+zipping takes a factor of 2 times less than the for loop for for small lists, and even larger factor for bigger lists.
+
+All in all you should choose the best way to go about each problem, and use special python functions for what they are intended for, as they are usually faster than whatever you may think of yourself.  This is seen here with the zip function, which is both simple and efficient to use to join lists of data.
