@@ -32,7 +32,7 @@ class MathVector:
 	def __neg__(self):
 		return self.neg()
 	def __abs__(self):
-		return MathVector([abs(x) for x in self.l])
+		return self.mag()
 	def __mul__(self, other):
 		if type(other) is int:
 			return self.sp(other)
