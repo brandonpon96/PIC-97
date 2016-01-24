@@ -1,6 +1,48 @@
 #!/usr/bin/python
 
+import doctest
+
 class MathVector:
+	"""
+	>>> u = MathVector(5)
+	>>> print "u =", u.print_me()
+	u = [0, 0, 0, 0, 0]
+	
+	>>> v = MathVector([2,3, 6])
+	>>> print "v =", v.print_me()
+	v = [2, 3, 6]
+	>>> w = MathVector(1,2,3)
+	>>> print "w =", w.print_me()
+	w = [1, 2, 3]
+	>>> print v.get_el(2)
+	3
+	>>> v.neg().print_me()
+	[-2, -3, -6]
+	>>> print v.mag()
+	7.0
+	>>> print v.dot(w)
+	26
+	>>> v.plus(w).print_me()
+	[3, 5, 9]
+	>>> v.sp(3).print_me()
+	[6, 9, 18]
+	>>> print v
+	[2, 3, 6]
+	>>> print v[2]
+	3
+	>>> print -v
+	[-2, -3, -6]
+	>>> print abs(v)
+	7.0
+	>>> print v*w
+	26
+	>>> print v+w
+	[3, 5, 9]
+	>>> print v*3
+	[6, 9, 18]
+	>>> print 3*v
+	[6, 9, 18]
+	"""
 	def __init__(self, *args):
 		self.l = []
 		if len(args) == 1:
@@ -43,30 +85,16 @@ class MathVector:
 	def __str__(self):
 		return str(self.l)
 
+doctest.testmod()
 u = MathVector(5)
 print "u =",
 u.print_me()
-
+ 
 v = MathVector([2,3, 6])
 print "v =",
 v.print_me()
-
+ 
 w = MathVector(1,2,3)
 print "w =",
 w.print_me()
 
-print v.get_el(2)
-v.neg().print_me()
-print v.mag()
-print v.dot(w)
-v.plus(w).print_me()
-v.sp(3).print_me()
-
-print v
-print v[2]
-print -v
-print abs(v)
-print v*w
-print v+w
-print v*3
-print 3*v
