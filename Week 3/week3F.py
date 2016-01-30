@@ -14,10 +14,10 @@ with open('data.csv', 'rb') as f:
 			regex = r"([a-zA-Z]+)\D+?([a-zA-Z]+)"
 			if words[0][-1] == ',':
 				#last name is first
-				fi.write(re.sub(regex, r"\2,\1,", row[0]))
+				fi.write(re.sub(regex, r"\2,,\1,", row[0]))
 			else:
 				#first name is first
-				fi.write(re.sub(regex, r"\1,\2,", row[0]))
+				fi.write(re.sub(regex, r"\1,,\2,", row[0]))
 		else:
 			regex = r"([a-zA-Z]+)\D+?([a-zA-Z]+)\D?\D?([a-zA-Z]+)\D?"
 			if words[0][-1] == ',':
