@@ -12,7 +12,8 @@ from pytz import timezone  # used to identify timezones
 nearest = 1e3*60*20        # 20 minutes expressed in milliseconds
 
 # the directory of all the data
-pwd = r"C:\Users\Matt\Dropbox (Personal)\UCLA\Teaching\PIC 97\Lecture\Lecture 9\2013"
+#pwd = r"C:\Users\Matt\Dropbox (Personal)\UCLA\Teaching\PIC 97\Lecture\Lecture 9\2013"
+pwd = r"2013"
 
 # loads a single CSV file and processes it
 def process_file(file):
