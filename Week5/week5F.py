@@ -53,7 +53,10 @@ class Window(QtGui.QWidget):
     		return True
 
     def mouseDoubleClickEvent(self, QMouseEvent):
-    	self.choose.setVisible(True)
+        x = QMouseEvent.pos().x()
+        y = QMouseEvent.pos().y()
+        if self.inBounds(x, y):
+    	   self.choose.setVisible(True)
 
     def mousePressEvent(self, QMouseEvent):
     	x = QMouseEvent.pos().x()
