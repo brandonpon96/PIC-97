@@ -1,4 +1,4 @@
-
+#run python /Users/brandon/anaconda2/lib/python2.7/site-packages/PyQt4/uic/pyuic.py design.ui > design_file.py to update qt designer file
 
 from PyQt4 import QtCore, QtGui, uic
 from design_file import Ui_MainWindow
