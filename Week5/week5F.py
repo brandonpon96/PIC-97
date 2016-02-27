@@ -5,7 +5,7 @@ from PyQt4 import QtGui, QtCore
 
 class Window(QtGui.QWidget):
     
-    def __init__(self):
+    def __init__(self,parent = None):
         super(Window, self).__init__()
         self.c_d = 50
         self.c_x = 0
@@ -18,12 +18,8 @@ class Window(QtGui.QWidget):
 
         self.setGeometry(100, 100, 600, 400)
         self.setWindowTitle('Week5W')
-
         self.choose = QtGui.QColorDialog()
-        #self.choose.move(0, 200)
-        #self.fontColor = QtGui.QAction('Font bg Color', self)
         self.choose.colorSelected.connect(self.color_picker)
-        #self.choose.addAction(self.fontColor)
         self.choose.setVisible(False)
         self.show()
 
