@@ -46,7 +46,9 @@ sol = np.append(sol, 0)
 
 plt.axis('equal')
 plt.title('Optimized Area')
-plt.plot(xaxis, z0, 'r--', xaxis, sol, 'b-')
+plt.plot(xaxis, z0, 'r--', label='Guess')
+plt.plot(xaxis, sol, 'b-',label='Solution')
+plt.legend(loc='upper right')
 plt.show()
 
 
