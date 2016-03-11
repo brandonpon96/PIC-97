@@ -1,5 +1,7 @@
 import scrapy
 from webcrawl.items import WebcrawlItem
+from scrapy import optional_features
+optional_features.remove('boto')
 
 # scrapy crawl spiderman -o file.csv -t csv
 

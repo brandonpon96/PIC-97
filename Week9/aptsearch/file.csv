@@ -1,21 +1,11 @@
-title,price,bed,bath,address,desc
-Lower Pacific Heights | 4 BD 3 BA | Furnished | Single Family,$ 17995 / month,4 Beds,3 Baths,San Francisco - Lower Pacific Heights,
-Premier Furnished Russian Hill Residence | Sweeping Bay Views | $13895,$ 13895 / month,3 Beds,3.5 Baths,San Francisco - Russian Hill,
-Panoramic Views of the Bay and GG Bridge- Modern - Short or Long Term,$ 10995 / month,2.5 Beds,2 Baths,San Francisco - Russian Hill,
-Dolores Heights | 3 Bed | 3 Bath | Views | Rooftop Deck | $9K-12K,$ 10995 / month,4 Beds,3 Baths,San Francisco - Dolores Heights,
-NOPA | 5 bed (sleeps 9) | 2 bath | Furnished | Deck+yard | $10.9K,$ 10895 / month,9 Beds,2 Baths,San Francisco - North Panhandle,
-Amazing Condo with Golden Gate Bridge and Bay Views!,$ 9895 / month,2 Beds,2.5 Baths,San Francisco - Pacific Heights,
-Views Galore | 2 BD + 2.5 BA | Deck+Patio | Laundry+Pkg | $9.7K,$ 9695 / month,2 Beds,2.5 Baths,San Francisco - Cow Hollow,
-Lovely Edwardian | Buena Vista Park | 3 Bed+2 Bath | Furnished | $7.9K,$ 7975 / month,3 Beds,2 Baths,San Francisco,
-Inner Sunset Excellence | 3.5 BD+3 BA | Furnished | Deck+ Yard | $7.9K,$ 7975 / month,3.5 Beds,3 Baths,San Francisco - Inner Sunset,
-Corona Heights | Furnished | 3 Bed | 2 Bath | Laundry | Parking | View,$ 7500 / month,3 Beds,2 Baths,San Francisco - Corona Heights,
-North Beach | 3 Bed | Furnished | Laundry | Parking | 6.7 to 9K,$ 7500 / month,3 Beds,2 Baths,San Francisco - North Beach,
-Presidio Heights Prime | 3 BD+2 BA | Unfurished | Laundry | $7.5K,$ 7500 / month,3 Beds,2 Baths,San Francisco - Presidio Heights,
-Outer Richmond Gem | 4 BD+4 BD | Modern Design | Laundry | View | Pkg,$ 6695 / month,4 Beds,4 Baths,San Francisco - Outer Richmond,
-Sausalito | 2 bed + den | 1 bath | 2 car | private deck | Furnished,$ 6595 / month,2 Beds,1 Bath,Sausalito,
-North Beach | Exec 2 Bed | 2.5 Bath | 2 Car| Office | $6.5K-9.0K/Month,$ 6500 / month,2 Beds,2.5 Baths,San Francisco - North Beach,
-Lower Pacific Heights | 3 BD | Laundry | Parking,$ 6499 / month,3 Beds,1 Bath,San Francisco - Lower Pacific Heights,
-Lower Pac Heights | 3 BD+1.5 BA | Furnished | Laundry+Pkg | Deck+Yard,$ 6295 / month,3 Beds,1.5 Baths,San Francisco - Lower Pacific Heights,
-Sunset | 3 Bed 2 Bath | Yard | Lndry | Garage | Ocean View | $5.5k-$7k,$ 6000 / month,3 Beds,2 Baths,San Francisco - Inner Sunset,
-Gracious top-floor view unit in highly coveted Corona Heights!,$ 5995 / month,2 Beds,1 Bath,San Francisco,
-Pac Heights Perfection | 2 BD 1 BA | 2 car | Furnished | Yard |,$ 5995 / month,2 Beds,1 Bath,San Francisco - Pacific Heights,
+dim,price,title,rating,address
+“I recommend the kimchi,4.0 star rating,Gushi,,978 Gayley Ave
+"“So the chicken curry is $7.99, the two piece salmon sushi is $4.75 & the",3.5 star rating,Tomodachi,,10975 Weyburn Ave
+“From the HH menu we also sampled the crispy bite sized cakes with spicy,4.0 star rating,The Backhouse,,10915 W Pico Blvd
+“I always get a boba ice coffee (they pull the shot there-- no watered down ice coffee in a jug) and the,3.5 star rating,ISO Fusion Cafe,,1108 Gayley Ave
+“The uni (sea urchin) and,4.0 star rating,Hide,,2040 Sawtelle Blvd
+“As I sit here and eat my spicy,3.5 star rating,Sansai Fresh Grill &,,10904 Lindbrook Dr
+“-,4.0 star rating,The Room,,1884 Westwood Blvd
+"“To the newbies, I would highly recommend the",4.0 star rating,Hamasaku,,11043 Santa Monica Blvd
+“Special rolls/sashimi:,3.0 star rating,Yamato Restaurant,,1099 Westwood Blvd
+“We ordered 3 rolls (,3.0 star rating,Ami Japanese Restaurant,,1051 Broxton Ave
