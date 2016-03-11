@@ -7,9 +7,9 @@ from aptsearch.items import AptsearchItem
 
 class Spiderman(scrapy.Spider):
     name = "spiderman"
-    allowed_domains = ["yelp.com"]
+    allowed_domains = ["youtube.com"]
     start_urls = [
-        "http://www.yelp.com/search?find_desc=sushi&find_loc=Westwood%2C+Los+Angeles%2C+CA&ns=1",
+        "https://www.youtube.com/results?search_query=work",
     ]
 
     def __init__(self):
@@ -17,16 +17,20 @@ class Spiderman(scrapy.Spider):
 
     def parse(self, response):
         #if self.i < 10:
-        #for sel in response.xpath('//div[@class="yt-lockup yt-lockup-tile yt-lockup-video clearfix"]'):
-        for sel in response.xpath('//li[@class= "regular-search-result"]'):
+        for sel in response.xpath('//ol[@class="item-section"]/li/div'):
+        #for sel in response.xpath('//li[@class= "regular-search-result"]'):
             item = AptsearchItem()
-            item['title'] = sel.xpath('.//a[@class = "biz-name"]/span/text()').extract()[0].strip()
-            item['price'] = sel.xpath('.//div[@class="biz-rating biz-rating-large clearfix"]/div/i/@title').extract()[0].strip()
-            item['address'] = sel.xpath('.//div[@class="secondary-attributes"]/address/text()').extract()[0].strip()
+            item['title'] = sel.xpath('.//div[@class="yt-lockup-content"]/h3/a/text()').extract()
+            yield item
+            # item['title'] = sel.xpath('.//a[@class = "biz-name"]/span/text()').extract()[0].strip()
+            # item['price'] = sel.xpath('.//div[@class="biz-rating biz-rating-large clearfix"]/div/i/@title').extract()[0].strip()
+            # item['address'] = sel.xpath('.//div[@class="secondary-attributes"]/address/text()').extract()[0].strip()
             # item['price'] = sel.xpath('.//div[@class= "ygl_info_price"]/text()').extract()[0].strip()
             # item['bed'] = sel.xpath('.//div[@class= "ygl_info_beds"]/text()').extract()[0].strip()
             # item['bath'] = sel.xpath('.//div[@class = "ygl_info_baths"]/text()').extract()[0].strip()
-            item_info = sel.xpath('.//a[@class = "biz-name"]/@href').extract()
+
+
+            item_info = sel.xpath('.//div[@class="yt-lockup-content"]/h3/a/@href').extract()
             url = response.urljoin(item_info[0])
             request = scrapy.Request(url, callback=self.parse_item)
             request.meta['item'] = item
@@ -42,7 +46,7 @@ class Spiderman(scrapy.Spider):
         # descripts =  body.xpath('//table[@class = "a-keyvalue prodDetTable"]//tr/th/text()').extract()
         # descripts = [x.strip() for x in descripts]
         # products = [x.strip() for x in products]
-        item['dim'] = response.xpath('//div[@class="media-story"]/p/text()').extract()[0].strip()
+        item['dim'] = response.xpath('//div[@id="watch8-sentiment-actions"]//span[@class="yt-uix-button-content"]/text()').extract()[0].strip()
         #item['weight'] = products[descripts.index("Item Weight")]
         yield item
 
