@@ -7,13 +7,14 @@ import numpy as np
 import pylab as plt
 from sympy import *
 
-
+tx = 5
+ty = 5
 P = float(pi)/2
 z0 = range(50)
 for g in range(50):
 	z0[g] = random.random() * P
 
-def getArea(array):
+def getVelocity(array):
 	limit = array[0]
 	xaxis = np.linspace(0, limit, 50)
 	dx = xaxis[1] - xaxis[0]
